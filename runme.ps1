@@ -1,6 +1,6 @@
 $downloadUrl = "https://download.sysinternals.com/files/Procdump.zip"
 $outputPath = "$env:TEMP\Procdump.zip"
-$extractPath = "$env:TEMP\Procdump"
+$extractPath = $args[0]
 
 # Download ProcDump
 Invoke-WebRequest -Uri $downloadUrl -OutFile $outputPath
